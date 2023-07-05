@@ -1,0 +1,668 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,900&family=Amatic+SC:wght@400;700&family=Bevan&family=Special+Elite&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width:100% ;
+    z-index: 999;
+    background-color: white;
+    font-family: 'Aleo',sans-serif;
+    padding: 30px 0;
+    /*transition: all 0.3s ease;*/
+}
+/*.navbar.sticky{
+    padding: 30px 0;
+    background: white;
+}*/
+.navbar .max-width{
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.2s ease;
+}
+.navbar .menu li a:hover{
+    color: #d94c76;
+
+}
+/*home section styling*/
+.home{
+    display: flex;
+    background: url("sliki/slika1.jpg")no-repeat center;
+    height: 100vh;
+    color: black;
+    min-height: 500px;
+    font-family: 'Bevan',sans-serif;
+}
+.home .max-width{
+    margin-top: 400px;
+}
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 60px;
+    font-weight: 600;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+}
+/*about section styling*/
+section{
+    padding: 100px 0;
+}
+.about, .hobbies .photography{
+    /*font-family: 'Special+Elite',sans-serif;*/
+    font-family: "Lucida Sans", sans-serif;
+}
+.about .title{
+    position: relative;
+    font-family: 'Bevan',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    font-size: 20px;
+    color: #d94c76;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .right{
+    width: 55%;
+    text-align: justify;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+/*hobbies section styling*/
+.hobbies{
+    color: white;
+    background: #111111;
+}
+.hobbies .title{
+    position: relative;
+    font-family: 'Bevan',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.hobbies .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 4px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.hobbies .title::after{
+    content: "what i love to do in my free time";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    font-size: 20px;
+    color: #d94c76;
+    padding: 5px;
+    background: #111111;
+    transform: translateX(-50%);
+}
+/*.hobbies .hobbies-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+}*/
+#hobbies > div > div{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-column-gap: 2em;
+    text-align: justify;
+}
+#hobbies > div > div > div:nth-child(1) > div > p{
+    background: #222;
+    padding: 30px;
+    border-radius: 10%;
+    transition: color 0.1s ease;
+}
+#hobbies > div > div > div:nth-child(2) > div > p{
+    background: #222;
+    padding: 30px;
+    border-radius: 10%;
+}
+#hobbies > div > div > div:nth-child(3) > div > p{
+    background: #222;
+    padding: 30px;
+    border-radius: 10%;
+}
+#hobbies > div > div > div:nth-child(1) > div > div{
+    position: relative;
+    left: 120px;
+}
+#hobbies > div > div > div:nth-child(2) > div > div{
+    position: relative;
+    left: 120px;
+}
+#hobbies > div > div > div:nth-child(3) > div > div{
+    position: relative;
+    left: 80px;
+}
+.hobbies .hobbies-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+}
+.hobbies .hobbies-content .card .box{
+    transition: all 0.3s ease;
+}
+.hobbies .hobbies-content .card:hover .box{
+     transform: scale(1.05);
+}
+/*photography section styling*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    left: 250px;
+}
+#photography > div.slideshow-container > p{
+    position: relative;
+    left: -30px;
+}
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}*/
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.photography .title{
+    position: relative;
+    font-family: 'Bevan',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.photography .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 4px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+.photography .title::after{
+    content: "my photos";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    font-size: 20px;
+    color: #d94c76;
+    padding: 5px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+/*skills section styling*/
+.skills{
+    background: #f1f1f1;
+}
+.skills .title{
+    position: relative;
+    font-family: 'Bevan',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+body > h2{
+    position: relative;
+    font-family: 'Bevan',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 4px;
+    background: #ffffff;
+    transform: translateX(-50%);
+}
+.skills .title::after{
+    content: "what i know";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    font-size: 20px;
+    color: #d94c76;
+    padding: 5px;
+    background: #f1f1f1;
+    transform: translateX(-50%);
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 30px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #d94c76;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 60%;
+}
+.skills-content .right .js::before{
+    width: 80%;
+}
+.skills-content .right .php::before{
+    width: 50%;
+}
+.skills-content .right .mysql::before{
+    width: 70%;
+}
+
+/*skills 2*/
+.row {
+    margin: 0;
+}
+.container {
+}
+
+.test_box {
+    padding: 0;
+}
+.test_box .inner {
+    background: #333;
+    display: block;
+    margin: 10px;
+    overflow: hidden;
+}
+.test_box .inner .test_click {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.1);
+    color: #fff;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    mix-blend-mode: normal;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+.test_box .inner .test_click:hover {
+    background-color: rgba(217, 123, 123, 0.52);
+    mix-blend-mode: hard-light;
+}
+.flex_this {
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    display: inherit;
+    flex-wrap: inherit;
+    height: auto;
+    margin: 0;
+    padding: 10px;
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    width: 100%;
+
+}
+.test_box .inner .test_click:hover .flex_this {
+    margin-top: -5px;
+}
+
+.test_title {
+    display: block;
+    font-weight: 700;
+    margin: 0 0 20px;
+    width: 100%;
+}
+.test_link {
+    border: 2px solid #fff;
+    display: inline-block;
+    font-size: .8em;
+    font-weight: 700;
+    letter-spacing: .1em;
+    margin: 0 auto;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+body > div > div{
+    display: flex;
+    justify-content: center;
+}
+.box-01 .inner {
+    background: url("sliki/timemenag.jpg");
+    width: 250px;
+    height: 300px;
+    background-position: 90% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-02 .inner {
+    background: url("sliki/teamwork.jpg");
+    width: 250px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-03 .inner {
+    background: url("sliki/research.jpg");
+    width: 250px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.box-04 .inner {
+    background: url("sliki/peoplemena.jpg");
+    width: 250px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* contact section styling */
+#contact{
+    background-color: #f6f3f3;
+}
+.contact .title{
+    position: relative;
+    font-family: 'Bevan',sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 215px;
+    height: 4px;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: "get in touch";
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    font-size: 20px;
+    color: #d94c76;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #d94c76;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button-area{
+    display: flex;
+    align-items: center;
+}
+.right form .button-area button{
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: #d94c76;
+    border: 2px solid #d94c76;
+    transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+    color: #d94c76;
+    background: none;
+}
+#contact > div > div{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    grid-column-gap: 10em;
+}
+#contact > div > div > div.column.left{
+    position: relative;
+    left: 140px;
+}
+#contact > div > div > div.column.left > div.text{
+    color: transparent;
+}
+#contact > div > div > div.column.left{
+    position: relative;
+    left: 40px;
+}
