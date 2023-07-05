@@ -54,7 +54,7 @@ body{
 /*home section styling*/
 .home{
     display: flex;
-    background: url("sliki/slika1.jpg")no-repeat center;
+    background: url("slika1.jpg")no-repeat center;
     height: 100vh;
     color: black;
     min-height: 500px;
