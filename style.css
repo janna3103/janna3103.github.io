@@ -498,7 +498,7 @@ body > div > div{
     justify-content: center;
 }
 .box-01 .inner {
-    background: url("sliki/timemenag.jpg");
+    background: url("timemenag.jpg");
     width: 250px;
     height: 300px;
     background-position: 90% 50%;
@@ -506,7 +506,7 @@ body > div > div{
     background-size: cover;
 }
 .box-02 .inner {
-    background: url("sliki/teamwork.jpg");
+    background: url("teamwork.jpg");
     width: 250px;
     height: 300px;
     background-position: 50% 50%;
@@ -514,7 +514,7 @@ body > div > div{
     background-size: cover;
 }
 .box-03 .inner {
-    background: url("sliki/research.jpg");
+    background: url("research.jpg");
     width: 250px;
     height: 300px;
     background-position: 50% 50%;
@@ -522,7 +522,7 @@ body > div > div{
     background-size: cover;
 }
 .box-04 .inner {
-    background: url("sliki/peoplemena.jpg");
+    background: url("peoplemena.jpg");
     width: 250px;
     height: 300px;
     background-position: 50% 50%;
